@@ -6,7 +6,7 @@ configs:
     kustomize.buildOptions: "--enable-helm"
     accounts.demo: login
   rbac:
-    policy.default: role:readonly
+    policy.default: ""
     policy.csv: |
       p, role:admin, *, *, *, allow
       g, admin, role:admin
