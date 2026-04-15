@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: demo-umbrella-pg
+  namespace: demo-app-umbrella
+spec:
+  bootstrap:
+    initdb:
+      database: demo_umbrella_test

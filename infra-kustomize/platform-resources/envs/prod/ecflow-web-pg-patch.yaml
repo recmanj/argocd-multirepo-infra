@@ -1,0 +1,15 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: ecflow-web-pg
+  namespace: ecflow-web
+spec:
+  instances: 3
+  storage:
+    size: 20Gi
+  bootstrap:
+    initdb:
+      database: django_prod
+  postgresql:
+    parameters:
+      max_connections: "200"

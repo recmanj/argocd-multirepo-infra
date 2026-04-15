@@ -1,0 +1,8 @@
+{
+    "chart": "alloy",
+    "chartRepo": "https://grafana.github.io/helm-charts",
+    "namespace": "observability",
+    "releaseName": "alloy",
+    "syncWave": "-2",
+    "version": "0.12.0"
+}

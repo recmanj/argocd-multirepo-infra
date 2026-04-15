@@ -1,0 +1,7 @@
+{
+    "appName": "platform-resources",
+    "namespace": "cloudnativepg",
+    "syncWave": "-1",
+    "prune": "false",
+    "appProject": "infrastructure"
+}

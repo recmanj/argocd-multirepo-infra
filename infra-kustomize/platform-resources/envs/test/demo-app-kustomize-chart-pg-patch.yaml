@@ -1,0 +1,15 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: demo-app-kustomize-chart-pg
+  namespace: demo-app-kustomize-chart
+spec:
+  instances: 3
+  storage:
+    size: 20Gi
+  bootstrap:
+    initdb:
+      database: demo_app_kustomize_chart_test
+  postgresql:
+    parameters:
+      max_connections: "200"

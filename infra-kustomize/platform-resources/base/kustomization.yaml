@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - cluster-issuer.yaml
+  - demo-cluster.yaml
+  - demo-app-kustomize-chart-cluster.yaml
+  - demo-umbrella-cluster.yaml
+  - demo-local-cluster.yaml
+  - demo-app-chart-cluster.yaml
+  - nexhub-pg-cluster.yaml
+  - expert-pg-cluster.yaml
+  - ecflow-web-pg-cluster.yaml

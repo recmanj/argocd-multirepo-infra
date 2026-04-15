@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+patches:
+  - path: demo-pg-patch.yaml
+  - path: demo-chart-pg-patch.yaml
+  - path: demo-umbrella-pg-patch.yaml
+  - path: demo-local-pg-patch.yaml
+  - path: demo-app-kustomize-chart-pg-patch.yaml
+  - path: nexhub-pg-patch.yaml
+  - path: expert-pg-patch.yaml
+  - path: ecflow-web-pg-patch.yaml

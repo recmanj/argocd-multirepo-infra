@@ -1,0 +1,16 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: demo-chart-pg
+  namespace: demo-app-chart
+spec:
+  instances: 1
+  storage:
+    size: 1Gi
+  bootstrap:
+    initdb:
+      database: demo_chart
+      owner: demo-chart
+  postgresql:
+    parameters:
+      max_connections: "50"

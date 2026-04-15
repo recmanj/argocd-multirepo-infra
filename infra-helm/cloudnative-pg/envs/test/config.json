@@ -1,0 +1,8 @@
+{
+    "chart": "cloudnative-pg",
+    "chartRepo": "https://cloudnative-pg.github.io/charts",
+    "namespace": "cloudnativepg",
+    "releaseName": "cloudnativepg",
+    "syncWave": "-3",
+    "version": "0.23.0"
+}

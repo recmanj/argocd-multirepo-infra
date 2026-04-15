@@ -1,0 +1,13 @@
+crds:
+  install: true
+  keep: true
+configs:
+  cm:
+    kustomize.buildOptions: "--enable-helm"
+  rbac:
+    policy.default: role:readonly
+    policy.csv: |
+      p, role:admin, *, *, *, allow
+      g, admin, role:admin
+      # TODO: bind real OIDC groups when SSO is configured
+      # g, myorg:platform-team, role:admin

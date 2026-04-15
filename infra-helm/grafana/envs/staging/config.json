@@ -1,0 +1,8 @@
+{
+    "chart": "grafana",
+    "chartRepo": "https://grafana.github.io/helm-charts",
+    "namespace": "observability",
+    "releaseName": "grafana",
+    "syncWave": "-2",
+    "version": "8.8.2"
+}

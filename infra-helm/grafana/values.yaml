@@ -1,0 +1,13 @@
+persistence:
+  enabled: false
+adminUser: admin
+adminPassword: admin
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+      - name: Loki
+        type: loki
+        url: http://loki-gateway.observability.svc.cluster.local:80
+        access: proxy
+        isDefault: true

@@ -1,0 +1,8 @@
+{
+    "chart": "loki",
+    "chartRepo": "https://grafana.github.io/helm-charts",
+    "namespace": "observability",
+    "releaseName": "loki",
+    "syncWave": "-2",
+    "version": "6.24.0"
+}

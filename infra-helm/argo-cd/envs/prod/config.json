@@ -1,0 +1,8 @@
+{
+    "chart": "argo-cd",
+    "chartRepo": "https://argoproj.github.io/argo-helm",
+    "namespace": "argocd",
+    "releaseName": "argocd",
+    "syncWave": "-99",
+    "version": "9.4.16"
+}

@@ -1,0 +1,15 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: demo-umbrella-pg
+  namespace: demo-app-umbrella
+spec:
+  instances: 3
+  storage:
+    size: 20Gi
+  bootstrap:
+    initdb:
+      database: demo_umbrella_prod
+  postgresql:
+    parameters:
+      max_connections: "200"

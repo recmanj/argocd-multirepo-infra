@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: demo-pg
+  namespace: demo-app
+spec:
+  bootstrap:
+    initdb:
+      database: demo_test

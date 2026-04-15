@@ -1,0 +1,16 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: nexhub-pg
+  namespace: nexhub
+spec:
+  instances: 1
+  storage:
+    size: 1Gi
+  bootstrap:
+    initdb:
+      database: django
+      owner: nexhub
+  postgresql:
+    parameters:
+      max_connections: "50"
