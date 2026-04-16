@@ -5,6 +5,7 @@ resources:
 patches:
   - path: demo-pg-patch.yaml
   - path: demo-chart-pg-patch.yaml
+  - path: demo-kustomize-chart-pg-patch.yaml
   - path: nexhub-pg-patch.yaml
   - path: expert-pg-patch.yaml
   - path: ecflow-web-pg-patch.yaml

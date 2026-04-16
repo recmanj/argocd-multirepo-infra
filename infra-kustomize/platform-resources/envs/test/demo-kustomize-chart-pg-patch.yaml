@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: demo-app-kustomize-chart-pg
+  namespace: demo-app-kustomize-chart
+spec:
+  bootstrap:
+    initdb:
+      database: demo_kustomize_chart_test

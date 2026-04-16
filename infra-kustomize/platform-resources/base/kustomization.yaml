@@ -4,6 +4,7 @@ resources:
   - cluster-issuer.yaml
   - demo-cluster.yaml
   - demo-app-chart-cluster.yaml
+  - demo-app-kustomize-chart-cluster.yaml
   - nexhub-pg-cluster.yaml
   - expert-pg-cluster.yaml
   - ecflow-web-pg-cluster.yaml
