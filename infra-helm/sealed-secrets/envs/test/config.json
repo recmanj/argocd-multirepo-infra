@@ -1,0 +1,8 @@
+{
+    "chart": "sealed-secrets",
+    "chartRepo": "https://bitnami-labs.github.io/sealed-secrets",
+    "namespace": "sealed-secrets",
+    "releaseName": "sealed-secrets",
+    "syncWave": "-2",
+    "version": "2.18.5"
+}
